@@ -26,40 +26,27 @@ body {
   font-family: 'Inter', sans-serif;
   background: var(--background);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.7;
 }
-
-/* HEADER */
 
 header {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .logo {
-  width: 300px;
-  max-width: 90%;
+  width: 260px;
   margin-bottom: 30px;
-  animation: fadeIn 1.2s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-15px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 header p {
-  margin-top: 10px;
   font-size: 20px;
+  max-width: 700px;
+  margin: auto;
   opacity: 0.9;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-/* BOTÓN PRINCIPAL */
 
 .button-primary {
   display: inline-block;
@@ -67,9 +54,9 @@ header p {
   padding: 16px 34px;
   background: white;
   color: var(--primary);
-  text-decoration: none;
   border-radius: 14px;
   font-weight: 600;
+  text-decoration: none;
   transition: 0.3s;
 }
 
@@ -77,8 +64,6 @@ header p {
   background: var(--accent);
   color: var(--primary-dark);
 }
-
-/* SECTIONS */
 
 section {
   padding: 100px 20px;
@@ -89,17 +74,15 @@ section {
 
 section h2 {
   font-size: 34px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-weight: 700;
 }
 
 section p {
   color: var(--text-secondary);
-  max-width: 700px;
+  max-width: 750px;
   margin: auto;
 }
-
-/* CARDS */
 
 .cards {
   display: grid;
@@ -110,7 +93,7 @@ section p {
 
 .card {
   background: var(--surface);
-  padding: 35px;
+  padding: 40px;
   border-radius: 20px;
   border: 1px solid var(--border);
   transition: 0.3s;
@@ -121,7 +104,28 @@ section p {
   box-shadow: 0 20px 40px rgba(0,0,0,0.06);
 }
 
-/* FOOTER */
+.cta {
+  background: var(--primary);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: var(--accent);
+  color: var(--primary-dark);
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
 
 footer {
   background: #111827;
@@ -134,7 +138,6 @@ footer {
   color: white;
   margin: 0 15px;
   font-size: 22px;
-  transition: 0.3s;
 }
 
 .social-icons a:hover {
@@ -149,17 +152,10 @@ footer {
   color: #9CA3AF;
   margin: 0 12px;
   text-decoration: none;
-  font-size: 14px;
 }
 
 .footer-links a:hover {
   color: var(--accent);
-}
-
-footer p {
-  margin-top: 25px;
-  font-size: 14px;
-  opacity: 0.7;
 }
 </style>
 </head>
@@ -167,52 +163,48 @@ footer p {
 <body>
 
 <header>
-  <img src="logoPrincipal.png" alt="PetFinder Logo" class="logo">
-  <p>La forma más rápida y segura de reportar y encontrar mascotas perdidas.</p>
-  <a class="button-primary" href="#">Próximamente en App Store y Google Play</a>
+  <img src="logoPrincipal.png" class="logo">
+  <p>La plataforma más confiable para reportar y localizar mascotas perdidas en tu comunidad.</p>
+  <a class="button-primary" href="#">Descarga próximamente</a>
 </header>
 
 <section>
-  <h2>¿Qué es PetFinder?</h2>
+  <h2>¿Cómo funciona?</h2>
+  <div class="cards">
+    <div class="card">
+      📍 Publica un reporte con ubicación exacta.
+    </div>
+    <div class="card">
+      🗺 Visualiza mascotas perdidas cerca de ti.
+    </div>
+    <div class="card">
+      🤝 Conecta con personas que pueden ayudarte.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>¿Por qué elegir PetFinder?</h2>
   <p>
-    PetFinder es una aplicación móvil que permite reportar mascotas perdidas,
-    visualizar reportes cercanos en un mapa interactivo y conectar personas
-    para ayudar a reunir familias con sus mascotas.
+    Porque entendemos que una mascota no es solo un animal, es parte de la familia.
+    Nuestra plataforma combina tecnología moderna con una comunidad solidaria
+    para maximizar las probabilidades de reencuentro.
   </p>
-</section>
-
-<section>
-  <h2>Nuestra Misión</h2>
-  <div class="card">
-    Facilitar la localización de mascotas perdidas mediante tecnología accesible,
-    creando una comunidad solidaria que ayude a reunir familias con sus compañeros.
-  </div>
-</section>
-
-<section>
-  <h2>Nuestra Visión</h2>
-  <div class="card">
-    Convertirnos en la mejor plataforma para la recuperación
-    de mascotas perdidas, impulsando el uso responsable de tecnología comunitaria.
-  </div>
 </section>
 
 <section>
   <h2>Nuestros Valores</h2>
   <div class="cards">
-    <div class="card">
-      ❤️ Empatía <br><br>
-      Creemos en ayudar y apoyar a quienes atraviesan la pérdida de una mascota.
-    </div>
-    <div class="card">
-      🔒 Seguridad <br><br>
-      Protegemos la información de nuestros usuarios con responsabilidad.
-    </div>
-    <div class="card">
-      🌎 Comunidad <br><br>
-      Fomentamos la colaboración entre personas para lograr un impacto real.
-    </div>
+    <div class="card">❤️ Empatía y compromiso real.</div>
+    <div class="card">🔒 Seguridad y protección de datos.</div>
+    <div class="card">🌎 Comunidad y colaboración.</div>
   </div>
+</section>
+
+<section class="cta">
+  <h2>Únete a la comunidad PetFinder</h2>
+  <p>Ayuda a reunir familias con sus mascotas.</p>
+  <a href="#">Muy pronto disponible</a>
 </section>
 
 <footer>
@@ -221,12 +213,10 @@ footer p {
     <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-x-twitter"></i></a>
   </div>
-
   <div class="footer-links">
     <a href="privacy.html">Política de Privacidad</a>
     <a href="contact.html">Contacto</a>
   </div>
-
   <p>© 2026 PetFinder. Todos los derechos reservados.</p>
 </footer>
 
