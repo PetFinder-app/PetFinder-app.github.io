@@ -1,138 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>PetFinder | Encuentra Mascotas Perdidas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>PetFinder | Encuentra Mascotas Perdidas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --primary: #3B19A5;
+  --primary-dark: #2E1283;
+  --accent: #A5E02D;
+  --background: #F9FAFB;
+  --surface: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+}
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f8fafc;
-      color: #1f2937;
-    }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
 
-    header {
-      background: linear-gradient(135deg, #4d40c1, #2314a6);
-      color: white;
-      text-align: center;
-      padding: 70px 15px;
-    }
+/* HEADER */
 
-    .logo {
-      width: 500px; 
-      max-width: 90%;
-      margin-bottom: 10px;
-      animation: fadeIn 1.5s ease-in-out;
-    }
+header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.logo {
+  width: 300px;
+  max-width: 90%;
+  margin-bottom: 30px;
+  animation: fadeIn 1.2s ease;
+}
 
-    header h1 {
-      font-size: 48px;
-      font-weight: 800;
-    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-    header p {
-      margin-top: 20px;
-      font-size: 20px;
-      opacity: 0.9;
-    }
+header p {
+  margin-top: 10px;
+  font-size: 20px;
+  opacity: 0.9;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 28px;
-      background: white;
-      color: #2563eb;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+/* BOTÓN PRINCIPAL */
 
-    .button:hover {
-      background: #e5e7eb;
-    }
+.button-primary {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 16px 34px;
+  background: white;
+  color: var(--primary);
+  text-decoration: none;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
 
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-    }
+.button-primary:hover {
+  background: var(--accent);
+  color: var(--primary-dark);
+}
 
-    section h2 {
-      font-size: 32px;
-      margin-bottom: 30px;
-      font-weight: 700;
-    }
+/* SECTIONS */
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
+section {
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
 
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    }
+section h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
 
-    footer {
-      background: #111827;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+section p {
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: auto;
+}
 
-    .social-icons a {
-      color: white;
-      margin: 0 15px;
-      font-size: 22px;
-      transition: 0.3s;
-    }
+/* CARDS */
 
-    .social-icons a:hover {
-      color: #2563eb;
-    }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
 
-    footer p {
-      margin-top: 20px;
-      font-size: 14px;
-      opacity: 0.7;
-    }
+.card {
+  background: var(--surface);
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+}
 
-    .footer-links {
-      margin-top: 15px;
-    }
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
 
-    .footer-links a {
-      color: #9ca3af;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 14px;
-    }
+/* FOOTER */
 
-    .footer-links a:hover {
-      color: white;
-    }
+footer {
+  background: #111827;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
 
-  </style>
+.social-icons a {
+  color: white;
+  margin: 0 15px;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #9CA3AF;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+footer p {
+  margin-top: 25px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+</style>
 </head>
 
 <body>
@@ -140,7 +169,7 @@
 <header>
   <img src="logoPrincipal.png" alt="PetFinder Logo" class="logo">
   <p>La forma más rápida y segura de reportar y encontrar mascotas perdidas.</p>
-  <a class="button" href="#">Próximamente en App Store y Google Play</a>
+  <a class="button-primary" href="#">Próximamente en App Store y Google Play</a>
 </header>
 
 <section>
@@ -172,22 +201,21 @@
   <h2>Nuestros Valores</h2>
   <div class="cards">
     <div class="card">
-      ❤️ Empatía <br>
+      ❤️ Empatía <br><br>
       Creemos en ayudar y apoyar a quienes atraviesan la pérdida de una mascota.
     </div>
     <div class="card">
-      🔒 Seguridad <br>
+      🔒 Seguridad <br><br>
       Protegemos la información de nuestros usuarios con responsabilidad.
     </div>
     <div class="card">
-      🌎 Comunidad <br>
+      🌎 Comunidad <br><br>
       Fomentamos la colaboración entre personas para lograr un impacto real.
     </div>
   </div>
 </section>
 
 <footer>
-
   <div class="social-icons">
     <a href="#"><i class="fab fa-facebook"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -200,7 +228,6 @@
   </div>
 
   <p>© 2026 PetFinder. Todos los derechos reservados.</p>
-
 </footer>
 
 </body>
