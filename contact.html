@@ -1,84 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Contacto | PetFinder</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Contacto | PetFinder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+<style>
+:root {
+  --primary: #3B19A5;
+  --primary-dark: #2E1283;
+  --accent: #A5E02D;
+  --background: #F9FAFB;
+  --surface: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+}
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f8fafc;
-      color: #1f2937;
-      text-align: center;
-    }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+  margin: 0;
+}
 
-    header {
-      background: linear-gradient(135deg, #4d40c1, #2314a6);
-      color: white;
-      padding: 60px 20px;
-    }
+header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
 
-    header h1 {
-      font-size: 32px;
-      font-weight: 800;
-    }
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 100px 20px;
+  text-align: center;
+}
 
-    .content {
-      padding: 80px 20px;
-    }
+.email {
+  margin-top: 30px;
+  font-size: 20px;
+}
 
-    .email {
-      font-size: 20px;
-      margin-top: 20px;
-    }
+.email a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
 
-    .email a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer {
-      background: #111827;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      margin-top: 80px;
-    }
-
-    .social-icons a {
-      color: white;
-      margin: 0 15px;
-      font-size: 22px;
-      transition: 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #2563eb;
-    }
-
-    .footer-links {
-      margin-top: 15px;
-    }
-
-    .footer-links a {
-      color: #9ca3af;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .footer-links a:hover {
-      color: white;
-    }
-
-  </style>
+footer {
+  background: #111827;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+</style>
 </head>
 
 <body>
@@ -87,31 +66,18 @@
   <h1>Contacto</h1>
 </header>
 
-<div class="content">
-  <p>Si necesitas soporte o deseas eliminar tu cuenta, puedes escribirnos a:</p>
-
+<section>
+  <p>Si necesitas soporte técnico, reportar un problema o solicitar la eliminación de tu cuenta, contáctanos:</p>
   <div class="email">
     📧 <a href="mailto:petfindersoporte@gmail.com">petfindersoporte@gmail.com</a>
   </div>
-
-  <p style="margin-top: 20px;">Respondemos normalmente dentro de 48 horas.</p>
-</div>
+  <p style="margin-top:20px; color: var(--text-secondary);">
+    Respondemos generalmente dentro de 24 a 48 horas.
+  </p>
+</section>
 
 <footer>
-
-  <div class="social-icons">
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-x-twitter"></i></a>
-  </div>
-
-  <div class="footer-links">
-    <a href="index.html">Inicio</a>
-    <a href="privacy.html">Política de Privacidad</a>
-  </div>
-
-  <p>© 2026 PetFinder. Todos los derechos reservados.</p>
-
+  © 2026 PetFinder. Todos los derechos reservados.
 </footer>
 
 </body>
