@@ -33,6 +33,11 @@ header {
   padding: 100px 20px;
 }
 
+.logo {
+  width: 360px;
+  margin-bottom: 5px;
+}
+
 section {
   max-width: 800px;
   margin: auto;
@@ -54,8 +59,32 @@ section {
 footer {
   background: #111827;
   color: white;
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 15px;
+  font-size: 22px;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #9CA3AF;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
 }
 </style>
 </head>
@@ -63,6 +92,9 @@ footer {
 <body>
 
 <header>
+  <img src="logoPrincipal.png" class="logo">
+  <a href="#"> </a>
+  </img>
   <h1>Contacto</h1>
 </header>
 
@@ -77,8 +109,18 @@ footer {
 </section>
 
 <footer>
-  © 2026 PetFinder. Todos los derechos reservados.
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+  </div>
+  <div class="footer-links">
+    <a href="index">Inicio</a>
+    <a href="privacy.html">Política de Privacidad</a>
+  </div>
+  <p>© 2026 PetFinder. Todos los derechos reservados.</p>
 </footer>
+
 
 </body>
 </html>
