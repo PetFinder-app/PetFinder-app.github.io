@@ -7,72 +7,57 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --primary: #3B19A5;
+  --primary-dark: #2E1283;
+  --accent: #A5E02D;
+  --background: #F9FAFB;
+  --surface: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+}
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+  margin: 0;
+}
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f8fafc;
-      color: #1f2937;
-    }
+header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
 
-    header {
-      background: linear-gradient(135deg, #4d40c1, #2314a6);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 20px;
+  line-height: 1.8;
+}
 
-    header h1 {
-      font-size: 32px;
-      font-weight: 800;
-    }
+h2 {
+  margin-top: 40px;
+  color: var(--primary);
+}
 
-    .content {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-      line-height: 1.7;
-    }
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
 
-    h2 { margin-top: 30px; }
+footer {
+  background: #111827;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+</style>
 
-    footer {
-      background: #111827;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .social-icons a {
-      color: white;
-      margin: 0 15px;
-      font-size: 22px;
-      transition: 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #2563eb;
-    }
-
-    .footer-links {
-      margin-top: 15px;
-    }
-
-    .footer-links a {
-      color: #9ca3af;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .footer-links a:hover {
-      color: white;
-    }
-
-  </style>
 </head>
 
 <body>
